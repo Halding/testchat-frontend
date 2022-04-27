@@ -1,0 +1,15 @@
+<h1>text fra chat.component</h1>
+
+<label>
+  leger med formcontrol - sættes op med at putte ReactiveFormsModule ind i module <br>
+  Message
+  <input type="text" [formControl]="message">
+</label>
+<button (click)="sendMessage()">Send Message</button>
+
+<h3>Echo med fra formcontrol med brug af .value <br> {{message.value}}</h3>
+
+
+<h4 *ngFor="let message of messages">
+  {{message}}
+</h4>
